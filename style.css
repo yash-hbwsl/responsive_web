@@ -385,7 +385,8 @@ padding: 0.875rem 6rem;
 
     #navbar__menu{
         position: relative;
-        
+        width: 100vw;
+        height:40vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -395,6 +396,18 @@ padding: 0.875rem 6rem;
     
     }
 
+    .navbar__menu__div{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin: 15px ;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar__menu__title{
+        margin-left:10px;
+        
+    }
     .navbar__lower{
         display: block;
         padding:2rem;
@@ -427,8 +440,27 @@ padding: 0.875rem 6rem;
                 }
 
     #footer{
+        position: relative;
         height:auto;
-    }                
+    }     
+    .one__title{
+        font-size: 1.1rem;
+    }           
+    .one__view{
+        font-size:1.1rem;
+    }
+    .navbar__lower__one{
+        width: 100%;
+        justify-content: space-between;
+    }
+        .navbar__lower__two {
+            margin-top:0.5rem;
+            width: 100%;
+            justify-content: space-between;
+        }
+        .navbar__lower{
+            height:6rem;
+        }
 }
 
 
