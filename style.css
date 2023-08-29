@@ -106,7 +106,6 @@
 
 #two{
     display: grid;
-    
     grid-template-columns: repeat(auto-fit,minmax(13.75rem,1fr));
     gap: 2.5rem;
     margin-top:1.5rem;
@@ -117,7 +116,7 @@
 }
 
 #footer{
-    
+  
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -459,7 +458,7 @@ padding: 0.875rem 6rem;
     #navbar__menu {
         position: relative;
         width: 100vw;
-        height: 40vh;
+        height: 30vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -581,6 +580,7 @@ padding: 0.875rem 6rem;
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width:600px) and (max-width: 768px) {
+    
     #hamburger {
         display: flex;
         width: 2rem;
@@ -629,8 +629,6 @@ padding: 0.875rem 6rem;
             justify-content: center;
             align-items: center;
             display: none;
-            
-    
         }
         .navbar__lower{
             padding:2rem;
@@ -646,6 +644,9 @@ padding: 0.875rem 6rem;
                 }
         .navbar__list__contact{
             margin: 0;
+        }
+        .navbar__menu__div{
+            margin:15px 0;
         }
         .navbar__lower__p{
             font-size: 1rem;
@@ -679,6 +680,29 @@ padding: 0.875rem 6rem;
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width:992px){
+    #footer {
+            display: block;
+            height:auto;
+    
+        }
+    
+        .footer__upper {
+            padding: 2rem;
+            flex-wrap: wrap;
+            display: block;
+            display: grid;
+            grid-template-columns: 25% 25% 25%;
+        }
+    
+        .footer__section {
+            margin-top: 1rem;
+            margin: 2rem;
+        }
+    
+        .footer__input {
+            width: 50vw;
+            padding: 8px;
+        }
     #hamburger {
             display: flex;
             width: 2rem;
@@ -716,14 +740,16 @@ padding: 0.875rem 6rem;
         #navbar__menu {
             position: relative;
             width: 100vw;
-            height: 40vh;
+            height: 35vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             display: none;
-    
-    
+        }
+
+        .navbar__menu__div{
+            margin: 10px 0;
         }
     
         .navbar__lower {
@@ -761,6 +787,7 @@ padding: 0.875rem 6rem;
     #navbar__upper{
         padding: 0.875rem 2rem;
     }
+
     #navbar__menu{
         align-items: center;
         display: flex;
@@ -776,13 +803,30 @@ padding: 0.875rem 6rem;
         width: 25rem;
     }
     #navbar__search{
-        width: 23rem;
+        width: 14rem;
     }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) and (max-width:1670px){
+@media only screen and (min-width: 1200px) and (max-width:1400px){
     #navbar__search {
-        width: 31rem;
+        width: 16rem;
     }
+
+    .card__section{
+        display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    }
+    
+    .image {
+        width: 30rem;
+    }
+}
+
+@media only screen  and (min-width:1400px){
+    #navbar__search {
+            width: 35rem;
+        }
+
+       
 }

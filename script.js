@@ -8,9 +8,9 @@ document.getElementById('hamburger').addEventListener('click', () => {
     }
     else {
         ele.classList.add('clicked');
-        menu.style.display = "block";
+        menu.style.display = "flex";
         ele.src='./assets/close.png';
-        menu.style.height = "12rem";
+        // menu.style.height = "12rem";
     }
    
     console.log('hamburger clicked');
