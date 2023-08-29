@@ -14,4 +14,5 @@ document.getElementById('hamburger').addEventListener('click', () => {
     }
    
     console.log('hamburger clicked');
+    
 });

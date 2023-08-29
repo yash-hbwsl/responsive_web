@@ -342,186 +342,30 @@ padding: 0.875rem 6rem;
     font-weight: 400;
     line-height: 1.25rem;
 }
-@media screen and (max-width:600px) {
-    #navbar__upper {
-        padding: 1.25rem;
-    }
-    
-    #footer {
-        display: block;
-        height:22.5rem;
-        
-    }
-
-    .footer__upper{
-        padding: 2rem;
-        flex-wrap: wrap;
-    }
-    .footer__section{
-        margin-top: 1rem;
-        margin:2rem;
-    }
-    .navbar__search__div{
-        display: none;
-        width: 5rem;
-    }
-    .navbar__menu__div{
-        margin-left:0;
-    }
-
-    #navbar__search{
-        width:5rem;
-    }
-
-    .main__one{
-        margin-top:1rem ;
-        display: block;
-        padding: 0rem;
-    }
-    .main__item__img{
-        margin:auto;
-        width: 90vw;
-    }
-
-    #navbar__menu{
-        position: relative;
-        width: 100vw;
-        height:40vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        display: none;
-        /* visibility: hidden; */
-    
-    }
-
-    .navbar__menu__div{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        margin: 15px ;
-        align-items: center;
-        justify-content: center;
-    }
-    .navbar__menu__title{
-        margin-left:10px;
-        
-    }
-    .navbar__lower{
-        display: block;
-        padding:2rem;
-    }
-    #hamburger{
-        display: flex;
-        width: 2rem;
-        height: 2rem;
-        
-    }
-        .navbar__upper__menubar {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        #main__section{
-            padding:2rem;
-        }
-
-        #two{
-            place-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(13.75rem, 1fr));
-        }
-                .navbar__lower {
-                    display: block;
-                    padding:2rem;
-                    height: 5rem;
-                }
-
-    #footer{
-        position: relative;
-        height:auto;
-    }     
-    .one__title{
-        font-size: 1.1rem;
-    }           
-    .one__view{
-        font-size:1.1rem;
-    }
-    .navbar__lower__one{
-        width: 100%;
-        justify-content: space-between;
-    }
-        .navbar__lower__two {
-            margin-top:0.5rem;
-            width: 100%;
-            justify-content: space-between;
-        }
-        .navbar__lower{
-            height:6rem;
-        }
-}
 
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    #footer {
-            display: block;
-            /* height: 22.5rem; */
-            height: auto;
-        }
-    
-        .footer__upper {
-            padding: 2rem;
-            flex-wrap: wrap;
-        }
-    
-        .footer__section {
-            margin-top: 1rem;
-            margin: 1rem;
-        }
-
-        
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-   
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    
-}
-
-.image{
+/* .image{
     position: absolute;
     
-}
+} */
 .card__section{
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    /* height:100rem; */
+    position: relative;
+    padding: 0.875rem 6rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
-
-.card__section__card>img{
+.image{
     width: 31rem;
-        height: 15.5625rem;
+    height: 15.5625rem;
+}
+.card__section__card{
+    position: relative;
+    /* margin-right:30rem; */
 }
 .heading{
-    position: relative;
+    position: absolute;
     top: 8.25rem;
     color: var(--pallate-white, #FFF);
-    
         /* leading-7/font-bold */
         font-family: Inter;
         font-size: 1.25rem;
@@ -533,10 +377,10 @@ padding: 0.875rem 6rem;
 }
 
 .text{
-    position: relative;
-    top: 8.25rem;
-color: var(--pallate-white, #FFF);
-
+    position: absolute;
+    top: 10.25rem;
+    color: var(--pallate-white, #FFF);
+    width: 60%;
     /* leading-5/font-normal */
     font-family: Inter;
     font-size: 0.875rem;
@@ -549,16 +393,396 @@ color: var(--pallate-white, #FFF);
 
 .btn{
     display: flex;
-    position: relative;
-    top:10rem;
+    position: absolute;
+    bottom:1rem;
     padding-left:1rem ;
     color: var(--pallate-white, #FFF);
-        /* text-align: center; */
-    
-        font-family: Inter;
-        font-size: 0.75rem;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 1rem;
+    font-family: Inter;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1rem;
        
+}
+
+@media screen and (max-width:600px) {
+    #navbar__upper {
+        padding: 1.25rem;
+    }
+
+    #footer {
+        display: block;
+        height: 22.5rem;
+
+    }
+
+    .footer__upper {
+        padding: 2rem;
+        flex-wrap: wrap;
+        display: block;
+    }
+
+    .footer__section {
+        margin-top: 1rem;
+        margin: 2rem;
+    }
+
+    .footer__input {
+        width: 70vw;
+        padding: 8px;
+    }
+
+    .navbar__search__div {
+        display: none;
+        width: 5rem;
+    }
+
+    .navbar__menu__div {
+        margin-left: 0;
+    }
+
+    #navbar__search {
+        width: 5rem;
+    }
+
+    .main__one {
+        margin-top: 1rem;
+        display: block;
+        padding: 0rem;
+    }
+
+    .main__item__img {
+        margin: auto;
+        width: 90vw;
+    }
+
+    #navbar__menu {
+        position: relative;
+        width: 100vw;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        /* visibility: hidden; */
+
+    }
+
+    .navbar__menu__div {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin: 15px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar__menu__title {
+        margin-left: 10px;
+
+    }
+
+    .navbar__lower {
+        display: block;
+        padding: 2rem;
+    }
+
+    #hamburger {
+        display: flex;
+        width: 2rem;
+        height: 2rem;
+
+    }
+
+    .navbar__upper__menubar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #main__section {
+        padding: 2rem;
+    }
+
+    #two {
+        place-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(13.75rem, 1fr));
+    }
+
+    .navbar__lower {
+        display: block;
+        padding: 2rem;
+        height: 5rem;
+    }
+
+    #footer {
+        position: relative;
+        height: auto;
+    }
+
+    .one__title {
+        font-size: 0.8rem;
+    }
+
+    .one__view {
+        font-size: 0.8rem;
+    }
+
+    .navbar__lower__one {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .navbar__lower__two {
+        margin-top: 0.5rem;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .navbar__lower {
+        height: fit-content;
+        /* height:5.5rem; */
+    }
+
+    .navbar__lower__p {
+        font-size: 0.7rem;
+    }
+
+    .navbar__list__contact {
+        margin: 0;
+    }
+
+    .one__view {
+        margin: 0;
+    }
+
+    .footer__section {
+        padding: 0;
+    }
+    .card__section{
+        padding: 2rem;
+        display: block;
+    }
+
+    .image{
+        width: 85vw;
+    }
+    .heading{
+        font-size: 1rem;
+    }
+    .text{
+        font-size:0.65rem;
+        width: 60vw;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width:600px) and (max-width: 768px) {
+    #hamburger {
+        display: flex;
+        width: 2rem;
+        height: 2rem;
+        }
+
+        .navbar__upper__menubar{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navbar__search__div{
+            margin-top: 1rem;
+        }
+    #footer {
+        display: block;
+        /* height: 22.5rem; */
+        height: auto;
+    }
+
+    .footer__upper {
+        padding: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .footer__section {
+        margin-top: 1rem;
+        margin: 1rem;
+    }
+
+    #navbar__upper{
+        padding:2rem;
+        margin:0;
+    }
+
+    .navbar__search__div{
+        width: 90vw;
+    }
+    #navbar__menu {
+            position: relative;
+            width: 100vw;
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            display: none;
+            
+    
+        }
+        .navbar__lower{
+            padding:2rem;
+            height: fit-content;
+            display: block;
+            /* font-size:0.3rem; */
+        }
+        .navbar__lower__one{
+            justify-content: space-between;
+        }
+                .navbar__lower__two {
+                    justify-content: space-between;
+                }
+        .navbar__list__contact{
+            margin: 0;
+        }
+        .navbar__lower__p{
+            font-size: 1rem;
+        }
+        .card__section {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #main__section{
+            padding: 1.25rem 3.5rem;
+        }
+        .image {
+            width: 85vw;
+        }
+        
+                .heading {
+                    font-size: 1.3rem;
+                }
+        
+                .text {
+                    font-size: 0.8rem;
+                    width: 60vw;
+                }
+    #two{
+        place-items: center;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width:992px){
+    #hamburger {
+            display: flex;
+            width: 2rem;
+            height: 2rem;
+        }
+    
+        .navbar__upper__menubar {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .navbar__search__div {
+            margin-top: 1rem;
+        }
+    .card__section{
+        display: grid;
+        padding:0.875rem 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(20rem ,1fr));
+    }
+    .image{
+        width: 20rem;
+    }
+    #main__section{
+        padding:0.875rem 2rem;
+    }
+        #navbar__upper {
+            padding: 2rem;
+            margin: 0;
+        }
+    
+        .navbar__search__div {
+            width: 90vw;
+        }
+    
+        #navbar__menu {
+            position: relative;
+            width: 100vw;
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            display: none;
+    
+    
+        }
+    
+        .navbar__lower {
+            padding: 2rem;
+            height: fit-content;
+            display: block;
+ 
+        }
+.navbar__lower {
+    padding: 2rem;
+    height: fit-content;
+    display: block;
+
+}
+
+.navbar__lower__one {
+    justify-content: space-between;
+}
+
+.navbar__lower__two {
+    justify-content: space-between;
+}
+
+.navbar__list__contact {
+    margin: 0;
+}
+
+.navbar__lower__p {
+    font-size: 1rem;
+}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width:1200px) {
+    #navbar__upper{
+        padding: 0.875rem 2rem;
+    }
+    #navbar__menu{
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .card__section{
+        padding:0.875rem 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    }
+    .image{
+        width: 25rem;
+    }
+    #navbar__search{
+        width: 23rem;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) and (max-width:1670px){
+    #navbar__search {
+        width: 31rem;
+    }
 }
