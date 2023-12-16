@@ -1,0 +1,29 @@
+name: Lint Check on PR Open
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js and PNPM
+      uses: actions/setup-node@v3
+      with:
+        node-version: 14
+
+    - name: Setup PNPM
+      run: npm install -g pnpm
+
+    - name: Install Dependencies
+      run: pnpm install
+
+    - name: Run Linting
+      run: pnpm lint
