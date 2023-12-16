@@ -1,18 +1,18 @@
-name: Lint Check on PR Open
+name: Next.js Deployment
 
 on:
-  pull_request:
-    types:
-      - opened
-      - synchronize
+  push:
+    branches:
+      - develop
 
 jobs:
-  lint:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
+
 
     - name: Setup Node.js and PNPM
       run: |
@@ -31,3 +31,4 @@ jobs:
 
     - name: Run Linting
       run: pnpm run lint
+
